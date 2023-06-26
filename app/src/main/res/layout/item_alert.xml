@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#2F7FBF"
+    android:gravity="center"
+    android:layout_height="270dp">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeErrorColor="#980D0D"
+        app:helperText="Ismingizni kiriting"
+        app:helperTextTextColor="#0040FF"
+        app:helperTextEnabled="true"
+        android:textSize="20sp"
+        app:boxStrokeWidthFocused="2dp"
+
+        app:boxBackgroundColor="@color/purple_200"
+        android:layout_marginHorizontal="10dp"
+        android:hint="name"
+        app:startIconCheckable="true"
+        app:startIconDrawable="@drawable/ic_titlie"
+        android:layout_marginTop="20dp"
+        app:startIconTint="#FF0000"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FF0000"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:textColorHint="#FF0000"
+        app:counterOverflowTextColor="@color/black"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        app:endIconMode="clear_text"
+        app:endIconTint="#FF0000"
+        app:boxStrokeErrorColor="#980D0D"
+        android:layout_height="wrap_content"
+        app:startIconCheckable="true"
+        app:startIconDrawable="@drawable/ic_number"
+        app:startIconTint="#FF0000"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:helperText="Raqaminggizni kiriting"
+        app:helperTextTextColor="#0040FF"
+        app:helperTextEnabled="true"
+        app:counterOverflowTextColor="@color/black"
+        android:layout_marginHorizontal="10dp"
+        app:boxBackgroundColor="@color/purple_200"
+        android:textColorHint="#FF0000"
+        android:layout_marginTop="10dp"
+        android:hint="number">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/edt_number"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="Save"
+        app:cornerRadius="25sp"
+        android:textColor="#E8FF00"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E6FF00"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginHorizontal="60dp"/>
+
+
+
+
+</LinearLayout>
